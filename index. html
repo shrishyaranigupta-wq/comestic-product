@@ -1,1 +1,160 @@
-<ht......
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmetic Products UI</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fff1f5, #fce4ec);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #e91e63;
+}
+
+/* Product Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Content */
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.desc {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Price */
+.price {
+    color: #e91e63;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Rating */
+.rating {
+    color: gold;
+}
+
+/* Button */
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #c2185b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Glow Cosmetic Collection 💄</h1>
+    <p>Premium Beauty Products</p>
+</header>
+
+<div class="container">
+
+    <!-- Product 1 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155223165f">
+        <div class="card-content">
+            <h3>Matte Lipstick</h3>
+            <p class="desc">Long-lasting matte lipstick with smooth finish and rich color.</p>
+            <div class="rating">★★★★★</div>
+            <p class="price">$12</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba3">
+        <div class="card-content">
+            <h3>Liquid Foundation</h3>
+            <p class="desc">Lightweight foundation for natural glow and full coverage.</p>
+            <div class="rating">★★★★☆</div>
+            <p class="price">$18</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273">
+        <div class="card-content">
+            <h3>Moisturizing Cream</h3>
+            <p class="desc">Hydrates skin deeply and gives a soft glowing look.</p>
+            <div class="rating">★★★★★</div>
+            <p class="price">$15</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd">
+        <div class="card-content">
+            <h3>Luxury Perfume</h3>
+            <p class="desc">Long-lasting fragrance for a fresh and elegant feel.</p>
+            <div class="rating">★★★★☆</div>
+            <p class="price">$25</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
